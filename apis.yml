@@ -1,23 +1,101 @@
 aid: avatier
+
 name: Avatier
-description: 'Avatier is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.avatier.com/images/og.png
+
+description: Avatier provides AI‑powered identity and access management solutions, offering self‑service password reset, lifecycle automation,
+  access governance, SSO, and AI‑driven security workflows. Their platform supports cloud‑hosted and non‑hosted deployments across major clouds
+  and integrates with MFA providers. Avatier targets enterprises seeking scalable, low‑code identity security with customizable APIs.
+
 url: https://raw.githubusercontent.com/api-evangelist/avatier/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
-- Company
-apis: []
+- Identity
+- Access Management
+- AI
+- Cloud
+- Enterprise
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Compliance
+  url: https://trust.avatier.com/
+- type: Security
+  url: security/avatier-vulnerability-disclosure.yml
+- type: LLMsTxt
+  url: llms/avatier-llms.txt
+- type: SecurityTxt
+  url: well-known/avatier-security.txt
+- type: SecurityTxt
+  url: well-known/avatier-identitychallengecard-security.txt
+- type: WellKnown
+  url: well-known/avatier-well-known.yml
+- type: Hosts
+  url: hosts/avatier-hosts.yml
+- type: Vendors
+  url: vendors/avatier-vendors.yml
+- type: TermsOfService
+  url: https://www.avatier.com/terms/
+- type: Support
+  url: https://www.avatier.com/support/
+- type: SignUp
+  url: https://community.avatier.com/auth/v3/register?brand_id=87209&return_to=https%253A%252F%252Fcommunity.avatier.com%252Fhc%252Fen-us%253Fbrand_id%253D87209&locale=en-us
+- type: PrivacyPolicy
+  url: https://www.avatier.com/privacy/
+- type: Pricing
+  url: https://www.avatier.com/products/identity-container/pricing/
+- type: Newsroom
+  url: https://www.avatier.com/news/
+- type: Leadership
+  url: https://www.avatier.com/leadership/
+- type: Blog
+  url: https://www.avatier.com/blog/
+- type: TrustCenter
+  url: security/avatier-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/avatier-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/avatier-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/avatier
+  url: https://www.avatier.com
+
+apis:
+- name: Avatier API
+  description: Identity and access management API (no machine-readable spec found)
+  humanURL: https://www.avatier.com
+  baseURL: null
+  aid: avatier:avatier-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Documentation pages are behind JavaScript challenges and no OpenAPI spec is accessible.
+  evidence:
+  - url: https://api.avatier.com/openapi.json
+    status: 0
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 12
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

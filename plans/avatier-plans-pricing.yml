@@ -1,0 +1,46 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.avatier.com/products/identity-container/pricing/
+sources:
+- https://www.avatier.com/products/identity-container/pricing/
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: per-seat
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Hosted (IDaaC) per-user monthly pricing; page also offers a NON-HOSTED self-managed option without
+  stated price. Volume discounts and minimum 1 year commitment noted.
+plan_count: 4
+currency: USD
+plans:
+- name: Password Management
+  price_text: $ 1.50 /mo per user
+  price: 1.5
+  currency: USD
+  period: month
+  unit: per user
+- name: Single Sign-On
+  price_text: $ 2.00 /mo per user
+  price: 2.0
+  currency: USD
+  period: month
+  unit: per user
+- name: Lifecycle
+  price_text: $ 5.00 /mo per user
+  price: 5.0
+  currency: USD
+  period: month
+  unit: per user
+- name: Access Governance
+  price_text: $ 3.00 /mo per user
+  price: 3.0
+  currency: USD
+  period: month
+  unit: per user

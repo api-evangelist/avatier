@@ -43,6 +43,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- type: Plans
+  url: plans/avatier-plans-pricing.yml
 - type: Compliance
   url: https://trust.avatier.com/
 - type: Security
